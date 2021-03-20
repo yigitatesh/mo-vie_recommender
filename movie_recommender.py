@@ -5,8 +5,8 @@ from scipy.sparse import load_npz
 from sklearn.neighbors import KNeighborsClassifier
 
 # LOAD DATA
-X = load_npz("X_data.npz")
-y = pd.read_csv("y_data.csv")
+X = load_npz("data/X_data.npz")
+y = pd.read_csv("data/y_data.csv")
 
 # CREATE MODEL
 knn = KNeighborsClassifier().fit(X, y.values.ravel())
